@@ -1,7 +1,6 @@
 package Postres
 
 public abstract class Postre{
-	public Postre() {
 		private String sabor;
 	    private ArrayList<Aderezo> aderezos;
 	    
@@ -15,5 +14,5 @@ public abstract class Postre{
 	    }
 	    
 	    
-	}
+	
 }
