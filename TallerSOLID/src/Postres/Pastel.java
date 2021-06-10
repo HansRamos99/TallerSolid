@@ -7,29 +7,23 @@ package Postres;
 
 import java.util.ArrayList;
 import Adicionales.Aderezo;
+import Procesos.ManejadorDePrecios;
 
 /**
  *
  * @author Pedro Mendoza
  */
-public class Pastel extends Postre{
-	public double precioParcial = 15.55;
+public class Pastel extends Postre implements ManejadorDePrecios {
+    static double precioParcial=15.55;
+   
     public Pastel(String sabor){
-        super(sabor);
-    }
-    
-    public double calcularPrecioFinal(){
-        double precioFinal;
-        precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
-        return precioFinal;
+        super(sabor, precioParcial);
     }
 
     @Override
     public String toString() {
         return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
     }
-    public String showPrecioFinal(){
-        return "Precio Final: $ " + calcularPrecioFinal();
-    }
+    
     
 }

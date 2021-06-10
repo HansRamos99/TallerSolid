@@ -1,18 +1,27 @@
-package Postres
+package Postres;
+
+import Adicionales.Aderezo;
+import java.util.ArrayList;
 
 public abstract class Postre{
-		private String sabor;
-	    private ArrayList<Aderezo> aderezos;
+            protected String sabor;
+	    protected ArrayList<Aderezo> aderezos;
+            double precioParcial;
 	    
-	    public Postre(String sabor){
+	    public Postre(String sabor, double precioParcial){
 	        aderezos= new ArrayList<>();
 	        this.sabor=sabor;
+                this.precioParcial=precioParcial;
 	    }
-	    
 	    public void addAderezos(Aderezo aderezo) {
-	        return aderezos.add(aderezo);
+	        aderezos.add(aderezo);
 	    }
+            public void quitarAderezo(Aderezo aderezo){
+                aderezos.remove(aderezo);
+            
+            }
+            public ArrayList<Aderezo> getAderezos() {
+        return aderezos;
+    }
 	    
-	    
-	
 }
