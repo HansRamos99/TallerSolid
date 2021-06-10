@@ -23,5 +23,9 @@ public abstract class Postre{
             public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
-	    
+
+    public double getPrecioParcial() {
+        return precioParcial;
+    }
+        
 }

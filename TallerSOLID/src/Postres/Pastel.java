@@ -14,7 +14,7 @@ import Procesos.ManejadorDePrecios;
  * @author Pedro Mendoza
  */
 public class Pastel extends Postre implements ManejadorDePrecios {
-    static double precioParcial=15.55;
+    private static double precioParcial=15.55;
    
     public Pastel(String sabor){
         super(sabor, precioParcial);
