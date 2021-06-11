@@ -7,13 +7,13 @@ package Postres;
 
 import java.util.ArrayList;
 import Adicionales.Aderezo;
-import Procesos.ManejadorDePrecios;
+import Procesos.ManejadorDePrecio;
 
 /**
  *
  * @author Pedro Mendoza
  */
-public class Pastel extends Postre implements ManejadorDePrecios {
+public class Pastel extends Postre implements ManejadorDePrecio {
     private static double precioParcial=15.55;
    
     public Pastel(String sabor){
