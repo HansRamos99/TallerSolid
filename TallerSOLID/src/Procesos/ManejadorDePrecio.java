@@ -11,7 +11,7 @@ import Postres.Postre;
  *
  * @author Hp
  */
-public interface ManejadorDePrecio {
+public class ManejadorDePrecio {
     
     static public double calcularPrecioFinal(Postre postre){
         double precioParcial= postre.getPrecioParcial();

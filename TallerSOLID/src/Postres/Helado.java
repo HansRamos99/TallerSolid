@@ -13,7 +13,7 @@ import Procesos.ManejadorDePrecio;
  *
  * @author Pedro Mendoza
  */
-public class Helado extends Postre implements ManejadorDePrecio {
+public class Helado extends Postre{
     private static double precioParcial = 7.85;
     public Helado(String sabor){
         super(sabor, precioParcial);

@@ -11,7 +11,7 @@ package Adicionales;
  */
 public abstract class Aderezo {
     //MALVAVISCOS,FRUTILLA,CREMA
-    String  NombreAderezo;
+    protected String NombreAderezo;
 
     abstract void setNombreAderezo(String NombreAderezo);
 
